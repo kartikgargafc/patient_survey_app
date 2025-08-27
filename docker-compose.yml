@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  patient_survey_app:
+    build:
+      context: .
+    ports:
+      - "8075:8075"
+    networks:
+      - ngnixproxymanager_default
+      
+networks:
+  ngnixproxymanager_default:
+    external: true
