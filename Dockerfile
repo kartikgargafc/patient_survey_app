@@ -1,5 +1,5 @@
 # Use an official Flutter runtime as a parent image
-FROM ghcr.io/cirruslabs/flutter:3.16.0
+FROM ghcr.io/cirruslabs/flutter:3.24.5
 
 # Set the working directory in the container
 WORKDIR /app
