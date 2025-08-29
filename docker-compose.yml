@@ -7,8 +7,8 @@ services:
     ports:
       - "8075:8075"
     networks:
-      - ngnixproxymanager_default
+      - npm_default
       
 networks:
-  ngnixproxymanager_default:
+  npm_default:
     external: true
