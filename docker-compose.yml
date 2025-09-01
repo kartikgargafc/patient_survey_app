@@ -8,7 +8,8 @@ services:
       - "8075:8075"
     networks:
       - npm_default
-      
+    restart: unless-stopped   # 👈 Auto-restart policy
+
 networks:
   npm_default:
     external: true
